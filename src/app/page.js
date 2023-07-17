@@ -12,7 +12,7 @@ export default function Home() {
   const send_password = async (e) => {
     e.preventDefault()
     if (password.password) {
-      const url = 'http://127.0.0.1:5000/checkpassword';
+      const url = 'https://password-checker-backend.adaptable.app/checkpassword';
       const response = await fetch(url, {
         method: 'POST',
         mode: 'cors',
